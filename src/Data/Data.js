@@ -24,71 +24,68 @@ export const SidebarData = [
     heading: "Dashboard",
   },
   {
-    icon: UilClipboardAlt,
-    heading: "Orders",
-  },
-  {
     icon: UilUsersAlt,
-    heading: "Customers",
+    heading: "Add Patient",
   },
   {
-    icon: UilPackage,
-    heading: 'Products'
+    icon: UilClipboardAlt,
+    heading: "Modify",
   },
   {
     icon: UilChart,
-    heading: 'Analytics'
+    heading: 'Delete'
   },
+  
 ];
 
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Sales",
+    title: "Today's Appointments",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 70,
-    value: "25,970",
+    value: "27",
     png: UilUsdSquare,
     series: [
       {
-        name: "Sales",
-        data: [31, 40, 28, 51, 42, 109, 100],
+        name: "Today's Appointments",
+        data: [8,12,16,19,22,25,27],
       },
     ],
   },
   {
-    title: "Revenue",
+    title: "Tomorrow's Appointments",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
       boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
     barValue: 80,
-    value: "14,270",
+    value: "25",
     png: UilMoneyWithdrawal,
     series: [
       {
-        name: "Revenue",
-        data: [10, 100, 50, 70, 80, 30, 40],
+        name: "Tomorrow's Appointments",
+        data: [10, 13,15,18,20,23,25],
       },
     ],
   },
   {
-    title: "Expenses",
+    title: "Next Appointments",
     color: {
       backGround:
         "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
     barValue: 60,
-    value: "4,270",
+    value: "30",
     png: UilClipboardAlt,
     series: [
       {
-        name: "Expenses",
-        data: [10, 25, 15, 30, 12, 15, 20],
+        name: "Next Appointments",
+        data: [10, 12, 15, 17, 20, 25, 30],
       },
     ],
   },
@@ -99,19 +96,19 @@ export const UpdatesData = [
   {
     img: img1,
     name: "Andrew Thomas",
-    noti: "has ordered Apple smart watch 2500mh battery.",
-    time: "25 seconds ago",
+    noti: "had done his teeth cleaning tratment.",
+    time: "25 minutes ago",
   },
   {
     img: img2,
     name: "James Bond",
-    noti: "has received Samsung gadget for charging battery.",
-    time: "30 minutes ago",
+    noti: "had done his root canal treatment.",
+    time: "2 days ago",
   },
   {
     img: img3,
     name: "Iron Man",
-    noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
-    time: "2 hours ago",
+    noti: "had done her Braces/Invisalign treatment.",
+    time: "2 days ago",
   },
 ];

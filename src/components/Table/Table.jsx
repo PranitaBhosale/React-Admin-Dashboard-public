@@ -13,15 +13,15 @@ function createData(name, trackingId, date, status) {
 }
 
 const rows = [
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+  createData("Andrew Thomas", 18908424, "6 December 2022", "Completed"),
+  createData("James Bond ", 18908424, "8 December 2022", "Pending"),
+  createData("Iron Man", 18908424, "10 December 2022", "Completed"),
+  createData("Suzan Karlo", 18908421, "12 December 2022", "Pending"),
 ];
 
 
 const makeStyle=(status)=>{
-  if(status === 'Approved')
+  if(status === 'Completed')
   {
     return {
       background: 'rgb(145 254 159 / 47%)',
@@ -46,7 +46,7 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h3>Recent Orders</h3>
+      <h3>Recent Appointments</h3>
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
@@ -54,8 +54,8 @@ export default function BasicTable() {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Product</TableCell>
-                <TableCell align="left">Tracking ID</TableCell>
+                <TableCell>Patient</TableCell>
+                <TableCell align="left">ID</TableCell>
                 <TableCell align="left">Date</TableCell>
                 <TableCell align="left">Status</TableCell>
                 <TableCell align="left"></TableCell>
@@ -75,7 +75,7 @@ export default function BasicTable() {
                   <TableCell align="left">
                     <span className="status" style={makeStyle(row.status)}>{row.status}</span>
                   </TableCell>
-                  <TableCell align="left" className="Details">Details</TableCell>
+                  <TableCell align="left" className="Details" ><a href="http://google.com" />Details</TableCell>
                 </TableRow>
               ))}
             </TableBody>

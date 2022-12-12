@@ -35,15 +35,15 @@ function CompactCard({ param, setExpanded }) {
       onClick={setExpanded}
     >
       <div className="radialBar">
-        <CircularProgressbar
+      <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
         />
         <span>{param.title}</span>
       </div>
       <div className="detail">
-        <Png />
-        <span>${param.value}</span>
+       
+        <span>{param.value}</span>
         <span>Last 24 hours</span>
       </div>
     </motion.div>
